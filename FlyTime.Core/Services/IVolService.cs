@@ -9,10 +9,10 @@ namespace FlyTime.Core.Services
 {
     public interface IVolService
     {
-        Task<IEnumerable<Pilot>> GetAllPilots();
-        ValueTask<Pilot> GetPilotById(int id);
-        Task<Pilot> CreatePilot(Pilot pilot);
-        Task<Pilot> UpdatePilote(Pilot pilot);
-        void DeletePilot(int id);
+        Task<IEnumerable<Vol>> GetAllVols();
+        ValueTask<Vol> GetVolById(int id);
+        Task<Vol> CreateVol(Vol vol);
+        Task<Vol> UpdateVol(Vol vol, int id);
+        void DeleteVol(Vol vol, int id);
     }
 }

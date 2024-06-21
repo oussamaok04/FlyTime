@@ -12,7 +12,7 @@ namespace FlyTime.Core.Services
         Task<IEnumerable<Pilot>> GetAllPilots();
         ValueTask<Pilot> GetPilotById(int id);
         Task<Pilot> CreatePilot(Pilot pilot);
-        Task<Pilot> UpdatePilote(Pilot pilot, int id);
-        void DeletePilot(Pilot pilot);
+        Task<Pilot> UpdatePilot(Pilot pilot, int id);
+        void DeletePilot(int id);
     }
 }

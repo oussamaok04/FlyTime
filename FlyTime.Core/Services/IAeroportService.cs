@@ -12,8 +12,8 @@ namespace FlyTime.Core.Services
         Task<IEnumerable<Aeroport>> GetAllAeroports();
         ValueTask<Aeroport> GetAeroportById(int id);
         Task<IEnumerable<Aeroport>> GetAeroportByCity(string city);
-        Task<IEnumerable<Aeroport>> GetAeroportByCountry(string name);
-        Task<IEnumerable<Aeroport>> GetAeroportByName(string name);
+        Task<IEnumerable<Aeroport>> GetAeroportByCountry(string country);
+        Task<Aeroport> GetAeroportByName(string name);
         Task<Aeroport> CreateAeroport(Aeroport aeroport);
         Task<Aeroport> UpdateAeroport(Aeroport aeroport, int id);
         void DeleteAeroport(int id);

@@ -9,14 +9,12 @@ namespace FlyTime.Core.Models
     public class Activity
     {
         public int Id { get; set; }
-        public Vol Vol { get; set; }
-        public Aeroport FromDestination { get; set; }
-        public Aeroport ToDestination { get; set; }
+        public Vol? Vol { get; set; }
+        public Aeroport? FromDestination { get; set; }
+        public Aeroport? ToDestination { get; set; }
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
-
-
-        public TimeSpan CalculateDuration()
+        public TimeSpan CalculateDuration() 
         {
             return TimeSpan.Zero;
         }
