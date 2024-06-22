@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,8 +10,15 @@ namespace FlyTime.Core.Models
 {
     public class Vol
     {
+        [Key]
         public int Id { get; set; }
+        
+        [Required]
+        public int PilotId { get; set; }
+
+        [ForeignKey("PilotId")]
         public Pilot? Pilot { get; set; }
+        
         public List<Activity>? Activities { get; set; }
 
 
@@ -39,7 +48,6 @@ namespace FlyTime.Core.Models
         }
         public TimeSpan GetFlightDuration()
         {
-            // Implémentez la logique pour calculer la durée du vol
             return TimeSpan.Zero;
 
         }
