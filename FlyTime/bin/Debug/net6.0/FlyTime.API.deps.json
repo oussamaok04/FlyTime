@@ -9,11 +9,14 @@
       "FlyTime.API/1.0.0": {
         "dependencies": {
           "FlyTime.Core": "1.0.0",
+          "FlyTime.Data": "1.0.0",
+          "FlyTime.Service": "1.0.0",
           "Microsoft.Data.SqlClient": "5.2.0",
           "Microsoft.EntityFrameworkCore": "6.0.30",
           "Microsoft.EntityFrameworkCore.Design": "6.0.30",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.30",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.30",
+          "Pomelo.EntityFrameworkCore.MySql": "6.0.3",
           "Swashbuckle.AspNetCore": "6.5.0",
           "System.Data.SqlClient": "4.8.6"
         },
@@ -409,6 +412,27 @@
           }
         }
       },
+      "MySqlConnector/2.1.2": {
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.2.0"
+          }
+        }
+      },
+      "Pomelo.EntityFrameworkCore.MySql/6.0.3": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.30",
+          "Microsoft.Extensions.DependencyInjection": "6.0.1",
+          "MySqlConnector": "2.1.2"
+        },
+        "runtime": {
+          "lib/net6.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "assemblyVersion": "6.0.3.0",
+            "fileVersion": "6.0.3.0"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "dependencies": {
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -684,10 +708,37 @@
           "Microsoft.Data.SqlClient": "5.2.0",
           "Microsoft.EntityFrameworkCore": "6.0.30",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.30",
+          "Pomelo.EntityFrameworkCore.MySql": "6.0.3",
           "System.Data.SqlClient": "4.8.6"
         },
         "runtime": {
           "FlyTime.Core.dll": {}
+        }
+      },
+      "FlyTime.Data/1.0.0": {
+        "dependencies": {
+          "FlyTime.Core": "1.0.0",
+          "Microsoft.Data.SqlClient": "5.2.0",
+          "Microsoft.EntityFrameworkCore": "6.0.30",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.30",
+          "Pomelo.EntityFrameworkCore.MySql": "6.0.3",
+          "System.Data.SqlClient": "4.8.6"
+        },
+        "runtime": {
+          "FlyTime.Data.dll": {}
+        }
+      },
+      "FlyTime.Service/1.0.0": {
+        "dependencies": {
+          "FlyTime.Core": "1.0.0",
+          "Microsoft.Data.SqlClient": "5.2.0",
+          "Microsoft.EntityFrameworkCore": "6.0.30",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.30",
+          "Pomelo.EntityFrameworkCore.MySql": "6.0.3",
+          "System.Data.SqlClient": "4.8.6"
+        },
+        "runtime": {
+          "FlyTime.Service.dll": {}
         }
       }
     }
@@ -957,6 +1008,20 @@
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
     },
+    "MySqlConnector/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JVokQTUNN3WHAu9Vw8ieeq1dXTFokJiig5P0VJ4f439UxRrsPo6SaVWC8Zdm6mkPeQFhZ0/9afdWa02EY/1j/w==",
+      "path": "mysqlconnector/2.1.2",
+      "hashPath": "mysqlconnector.2.1.2.nupkg.sha512"
+    },
+    "Pomelo.EntityFrameworkCore.MySql/6.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jEa462J9uNlmpX7qLXpJVOInonwF6E0bFbij6hboTsQJK7thfazh8xwF8fe79kUrp4+6e5A13KT5aLBIkt7RTg==",
+      "path": "pomelo.entityframeworkcore.mysql/6.0.3",
+      "hashPath": "pomelo.entityframeworkcore.mysql.6.0.3.nupkg.sha512"
+    },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -1175,6 +1240,16 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "FlyTime.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FlyTime.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FlyTime.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

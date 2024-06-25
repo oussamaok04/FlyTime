@@ -89,7 +89,7 @@ namespace FlyTime.Service.Services
             await _unitOfWork.CommitAsync();
         }
 
-        public Task<Activity> GetActivityByEndTime(DateTime endTime)
+        public Task<Activity> GetActivityByEndTime(TimeSpan endTime)
         {
             return _unitOfWork.Activities.GetByEndTime(endTime);
         }
@@ -99,7 +99,7 @@ namespace FlyTime.Service.Services
             return _unitOfWork.Activities.GetByIdAsync(id);
         }
 
-        public Task<Activity> GetActivityByStartTime(DateTime startTime)
+        public Task<Activity> GetActivityByStartTime(TimeSpan startTime)
         {
             return _unitOfWork.Activities.GetByStartTime(startTime);
         }
