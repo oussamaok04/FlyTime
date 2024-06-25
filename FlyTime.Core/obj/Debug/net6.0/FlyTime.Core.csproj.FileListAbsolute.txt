@@ -1,0 +1,14 @@
+C:\Users\lenovo\source\repos\FlyTime\FlyTime.Core\bin\Debug\net6.0\FlyTime.Core.deps.json
+C:\Users\lenovo\source\repos\FlyTime\FlyTime.Core\bin\Debug\net6.0\FlyTime.Core.runtimeconfig.json
+C:\Users\lenovo\source\repos\FlyTime\FlyTime.Core\bin\Debug\net6.0\FlyTime.Core.dll
+C:\Users\lenovo\source\repos\FlyTime\FlyTime.Core\bin\Debug\net6.0\FlyTime.Core.pdb
+C:\Users\lenovo\source\repos\FlyTime\FlyTime.Core\obj\Debug\net6.0\FlyTime.Core.csproj.AssemblyReference.cache
+C:\Users\lenovo\source\repos\FlyTime\FlyTime.Core\obj\Debug\net6.0\FlyTime.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\source\repos\FlyTime\FlyTime.Core\obj\Debug\net6.0\FlyTime.Core.AssemblyInfoInputs.cache
+C:\Users\lenovo\source\repos\FlyTime\FlyTime.Core\obj\Debug\net6.0\FlyTime.Core.AssemblyInfo.cs
+C:\Users\lenovo\source\repos\FlyTime\FlyTime.Core\obj\Debug\net6.0\FlyTime.Core.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\FlyTime\FlyTime.Core\obj\Debug\net6.0\FlyTime.Core.dll
+C:\Users\lenovo\source\repos\FlyTime\FlyTime.Core\obj\Debug\net6.0\refint\FlyTime.Core.dll
+C:\Users\lenovo\source\repos\FlyTime\FlyTime.Core\obj\Debug\net6.0\FlyTime.Core.pdb
+C:\Users\lenovo\source\repos\FlyTime\FlyTime.Core\obj\Debug\net6.0\FlyTime.Core.genruntimeconfig.cache
+C:\Users\lenovo\source\repos\FlyTime\FlyTime.Core\obj\Debug\net6.0\ref\FlyTime.Core.dll

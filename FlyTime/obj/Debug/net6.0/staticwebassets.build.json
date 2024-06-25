@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "5AfFJUKpWUjLa1kFqS8oJlKecbWM4dThduvhTPdgZMA=",
+  "Source": "FlyTime.API",
+  "BasePath": "_content/FlyTime.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

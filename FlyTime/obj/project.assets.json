@@ -1173,6 +1173,22 @@
             "rid": "win"
           }
         }
+      },
+      "FlyTime.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.0",
+          "Microsoft.EntityFrameworkCore": "6.0.30",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.30",
+          "System.Data.SqlClient": "4.8.6"
+        },
+        "compile": {
+          "bin/placeholder/FlyTime.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FlyTime.Core.dll": {}
+        }
       }
     }
   },
@@ -3362,10 +3378,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "FlyTime.Core/1.0.0": {
+      "type": "project",
+      "path": "../FlyTime.Core/FlyTime.Core.csproj",
+      "msbuildProject": "../FlyTime.Core/FlyTime.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "FlyTime.Core >= 1.0.0",
       "Microsoft.Data.SqlClient >= 5.2.0",
       "Microsoft.EntityFrameworkCore >= 6.0.30",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.30",
@@ -3401,7 +3423,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\lenovo\\source\\repos\\FlyTime\\FlyTime.Core\\FlyTime.Core.csproj": {
+              "projectPath": "C:\\Users\\lenovo\\source\\repos\\FlyTime\\FlyTime.Core\\FlyTime.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
