@@ -9,7 +9,7 @@ namespace FlyTime.Core.Repositories
 {
     public interface IAeroportRepository : IRepository<Aeroport>
     {
-        Task<Aeroport> GetByCode(int id);
+        Task<Aeroport> GetByCode(String code);
         Task<IEnumerable<Aeroport>> GetAllByCity(string city);
         Task<IEnumerable<Aeroport>> GetAllByCountry(string country);
         Task<Aeroport> GetByName(string name);

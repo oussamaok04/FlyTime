@@ -14,10 +14,10 @@ namespace FlyTime.Data.Repositories
             get { return Context as FlyTimeDbContext; }
         }
 
-        public async Task<Aeroport> GetByCode(int id)
+        public async Task<Aeroport> GetByCode(String code)
         {
             return await FlyTimeDbContext.Aeroports
-                .FirstOrDefaultAsync(a => a.Id == id);
+                .FirstOrDefaultAsync(a => a.Code == code);
         }
 
         public async Task<IEnumerable<Aeroport>> GetAllByCity(string city)

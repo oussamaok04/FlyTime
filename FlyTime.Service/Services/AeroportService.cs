@@ -145,5 +145,22 @@ namespace FlyTime.Service.Services
 
             return existingAeroport;
         }
+
+        public Task<Aeroport> GetAeroportByCode(string code)
+        {
+            var obj = _unitOfWork.Aeroports.GetByCode(code).Result;
+            if (obj == null)
+            {
+                obj = new Aeroport();
+                obj.Code = code;
+                obj.Name = code;
+                obj.City = code;
+                obj.Country = code;
+
+                 _unitOfWork.Aeroports.AddAsync(obj);
+                 _unitOfWork.CommitAsync();
+            }
+            return _unitOfWork.Aeroports.GetByCode(code);
+        }
     }
 }
