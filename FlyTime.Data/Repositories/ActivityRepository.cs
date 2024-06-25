@@ -14,13 +14,13 @@ namespace FlyTime.Data.Repositories
             get { return Context as FlyTimeDbContext; }
         }
 
-        public async Task<Activity> GetByEndTime(DateTime endTime)
+        public async Task<Activity> GetByEndTime(TimeSpan endTime)
         {
             return await FlyTimeDbContext.Activities
                 .FirstOrDefaultAsync(a => a.EndTime == endTime);
         }
 
-        public async Task<Activity> GetByStartTime(DateTime startTime)
+        public async Task<Activity> GetByStartTime(TimeSpan startTime)
         {
             return await FlyTimeDbContext.Activities
                 .FirstOrDefaultAsync(a => a.StartTime == startTime);

@@ -10,6 +10,7 @@ namespace FlyTime.API.Controllers
     public class TestFileController : ControllerBase
     {
         public string filePath = "Controllers/test.csv";
+        public int currentId = 0;
 
         [HttpGet]
         [Route("/content")]
@@ -29,14 +30,14 @@ namespace FlyTime.API.Controllers
                 var cells = line.Split(',');
                 Activity activity = new Activity();
                 Aeroport a1 = new Aeroport();
-                a1.Id = 1;
+                a1.Id = currentId++;
                 a1.Name = cells[2];
                 a1.City = cells[2];
                 a1.Code = cells[2];
                 a1.Country = cells[2];
 
                 Aeroport a2 = new Aeroport();
-                a2.Id = 1;
+                a2.Id = currentId++;
                 a2.Name = cells[3];
                 a2.City = cells[3];
                 a2.Code = cells[3];

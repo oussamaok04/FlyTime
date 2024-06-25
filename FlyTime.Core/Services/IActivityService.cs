@@ -13,8 +13,8 @@ namespace FlyTime.Core.Services
         Task<Activity> UpdateActivity(Activity activity, int id);
         void DeleteActivity(Activity activity);
         ValueTask<Activity> GetActivityById(int id);
-        Task<Activity> GetActivityByStartTime(DateTime startTime);
-        Task<Activity> GetActivityByEndTime(DateTime endTime);
+        Task<Activity> GetActivityByStartTime(TimeSpan startTime);
+        Task<Activity> GetActivityByEndTime(TimeSpan endTime);
         Task<IEnumerable<Activity>> GetActivityByVol(Vol vol);
     }
 }

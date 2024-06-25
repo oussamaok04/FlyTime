@@ -90,3 +90,9 @@ C:\Users\lenovo\source\repos\FlyTime\FlyTime\obj\Debug\net6.0\FlyTime.API.genrun
 C:\Users\lenovo\source\repos\FlyTime\FlyTime\obj\Debug\net6.0\ref\FlyTime.API.dll
 C:\Users\lenovo\source\repos\FlyTime\FlyTime\bin\Debug\net6.0\FlyTime.Core.dll
 C:\Users\lenovo\source\repos\FlyTime\FlyTime\bin\Debug\net6.0\FlyTime.Core.pdb
+C:\Users\lenovo\source\repos\FlyTime\FlyTime\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\lenovo\source\repos\FlyTime\FlyTime\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\lenovo\source\repos\FlyTime\FlyTime\bin\Debug\net6.0\FlyTime.Data.dll
+C:\Users\lenovo\source\repos\FlyTime\FlyTime\bin\Debug\net6.0\FlyTime.Service.dll
+C:\Users\lenovo\source\repos\FlyTime\FlyTime\bin\Debug\net6.0\FlyTime.Data.pdb
+C:\Users\lenovo\source\repos\FlyTime\FlyTime\bin\Debug\net6.0\FlyTime.Service.pdb
