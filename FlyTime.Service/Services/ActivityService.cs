@@ -105,9 +105,9 @@ namespace FlyTime.Service.Services
         }
 
         // Méthode pour récupérer les activités par vol
-        public Task<IEnumerable<Activity>> GetActivityByVol(Vol vol)
+        public Task<IEnumerable<Activity>> GetActivityByVol(int id)
         {
-            return _unitOfWork.Activities.GetActivityByVol(vol);
+            return _unitOfWork.Activities.GetActivityByVol(id);
         }
 
         public Task<List<Activity>> GetAllActivities()

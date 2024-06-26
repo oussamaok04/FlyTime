@@ -6,7 +6,7 @@ namespace FlyTime.Core.Repositories
     {
         public Task<Activity> GetByEndTime(TimeSpan endTime);
         public Task<Activity> GetByStartTime(TimeSpan startTime);
-        Task<IEnumerable<Activity>> GetActivityByVol(Vol vol);
+        Task<IEnumerable<Activity>> GetActivityByVol(int id);
         Task<List<Activity>> GetAllActivities();
 
     }

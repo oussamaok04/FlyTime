@@ -26,11 +26,16 @@ namespace FlyTime.Data.Repositories
                 .FirstOrDefaultAsync(a => a.StartTime == startTime);
         }
 
-        public async Task<IEnumerable<Activity>> GetActivityByVol(Vol vol)
+        public async Task<IEnumerable<Activity>> GetActivityByVol(int id)
         {
-            return await FlyTimeDbContext.Activities
-                .Where(a => a.Vol.Id == vol.Id)
+            return await FlyTimeDbContext.Activities.FromSqlRaw(
+                    "select * from activities a where a.volid = {0}", id
+                ).ToListAsync();
+                /*
+                 * await FlyTimeDbContext.Activities
+                .Where(a => a.VolId == vol.Id)
                 .ToListAsync();
+                 * */
         }
 
         public Task<List<Activity>> GetAllActivities()

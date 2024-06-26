@@ -40,6 +40,13 @@ namespace FlyTime.API.Controllers
             return aService.GetAllActivities();
         }
 
+        [HttpGet]
+        [Route("/vols")]
+        public Task<IEnumerable<Vol>> getAllVols()
+        {
+            return vService.GetAllVols();
+        }
+
         [HttpDelete]
         [Route("/delete/{id}")]
         public async void deleteById(int id)
@@ -170,6 +177,13 @@ namespace FlyTime.API.Controllers
             }
             //return Task.CompletedTask;
             //return result;
+        }
+
+        [HttpGet]
+        [Route("/activities/vol/{id}")]
+        public async Task<IEnumerable<Activity>> getActivitiesByVolId(int id)
+        {
+            return await aService.GetActivityByVol(id);
         }
     }
 }
