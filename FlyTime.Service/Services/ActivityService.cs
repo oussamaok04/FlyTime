@@ -110,6 +110,11 @@ namespace FlyTime.Service.Services
             return _unitOfWork.Activities.GetActivityByVol(vol);
         }
 
+        public Task<List<Activity>> GetAllActivities()
+        {
+            return _unitOfWork.Activities.GetAllActivities();
+        }
+
         public async Task<Activity> UpdateActivity(Activity activity, int id)
         {
             var existingActivity = await _unitOfWork.Activities.GetByIdAsync(id);

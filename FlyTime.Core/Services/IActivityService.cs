@@ -16,5 +16,6 @@ namespace FlyTime.Core.Services
         Task<Activity> GetActivityByStartTime(TimeSpan startTime);
         Task<Activity> GetActivityByEndTime(TimeSpan endTime);
         Task<IEnumerable<Activity>> GetActivityByVol(Vol vol);
+        Task<List<Activity>> GetAllActivities();
     }
 }

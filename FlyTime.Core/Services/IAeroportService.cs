@@ -12,7 +12,7 @@ namespace FlyTime.Core.Services
         Task<IEnumerable<Aeroport>> GetAllAeroports();
         ValueTask<Aeroport> GetAeroportById(int id);
         Task<IEnumerable<Aeroport>> GetAeroportByCity(string city);
-        Task<IEnumerable<Aeroport>> GetAeroportByCode(string code);
+        Task<Aeroport> GetAeroportByCode(string code);
         Task<IEnumerable<Aeroport>> GetAeroportByCountry(string country);
         Task<Aeroport> GetAeroportByName(string name);
         Task<Aeroport> CreateAeroport(Aeroport aeroport);

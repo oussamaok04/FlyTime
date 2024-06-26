@@ -19,16 +19,12 @@ namespace FlyTime.Core.Models
         [ForeignKey("VolId")]
         public Vol? Vol { get; set; }
 
-        [Required]
         public Aeroport? FromDestination { get; set; }
         
-        [Required]
         public Aeroport? ToDestination { get; set; }
         
-        [Required]
         public TimeSpan StartTime { get; set; }
         
-        [Required]
         public TimeSpan EndTime { get; set; }
         
         public TimeSpan CalculateDuration() 

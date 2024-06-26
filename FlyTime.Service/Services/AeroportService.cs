@@ -146,9 +146,9 @@ namespace FlyTime.Service.Services
             return existingAeroport;
         }
 
-        public Task<Aeroport> GetAeroportByCode(string code)
+        public async Task<Aeroport> GetAeroportByCode(string code)
         {
-            var obj = _unitOfWork.Aeroports.GetByCode(code).Result;
+            Aeroport obj = _unitOfWork.Aeroports.GetByCode(code).Result;
             if (obj == null)
             {
                 obj = new Aeroport();
@@ -157,10 +157,9 @@ namespace FlyTime.Service.Services
                 obj.City = code;
                 obj.Country = code;
 
-                 _unitOfWork.Aeroports.AddAsync(obj);
-                 _unitOfWork.CommitAsync();
+                await CreateAeroport(obj);
             }
-            return _unitOfWork.Aeroports.GetByCode(code);
+            return await _unitOfWork.Aeroports.GetByCode(code);
         }
     }
 }

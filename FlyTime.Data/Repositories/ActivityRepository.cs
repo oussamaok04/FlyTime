@@ -32,5 +32,10 @@ namespace FlyTime.Data.Repositories
                 .Where(a => a.Vol.Id == vol.Id)
                 .ToListAsync();
         }
+
+        public Task<List<Activity>> GetAllActivities()
+        {
+            return Task.FromResult(FlyTimeDbContext.Activities.ToList());
+        }
     }
 }
